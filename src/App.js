@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Parallax } from 'react-parallax';
 
 const NavBar = () => {
   return (
@@ -9,25 +10,41 @@ const NavBar = () => {
         </a>
         <ul id="nav-list">
           <li>
-            <a href="/">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="/">Introduction</a>
+            <a href="#introduction">Introduction</a>
           </li>
           <li>
-            <a href="/">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="/">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="/">Education</a>
+            <a href="#education">Education</a>
           </li>
         </ul>
       </div>
     </StyledNavBar>
   );
 };
+
+// const Container = () => (
+//   <Parallax
+//     blur={10}
+//     bgImage="path/to/image.jpg"
+//     bgImageAlt="the cat"
+//     strength={200}
+//     style={{
+//       height: '50vh',
+//       backgroundColor: '#ddd222',
+//       border: '1px solid black',
+//     }}
+//   >
+//     Content goes here. Parallax height grows with content height.
+//   </Parallax>
+// );
 
 function App() {
   return (
