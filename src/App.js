@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Parallax } from 'react-parallax';
+import TypeAnimation from 'react-type-animation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NavBar = () => {
   return (
@@ -30,26 +31,34 @@ const NavBar = () => {
   );
 };
 
-// const Container = () => (
-//   <Parallax
-//     blur={10}
-//     bgImage="path/to/image.jpg"
-//     bgImageAlt="the cat"
-//     strength={200}
-//     style={{
-//       height: '50vh',
-//       backgroundColor: '#ddd222',
-//       border: '1px solid black',
-//     }}
-//   >
-//     Content goes here. Parallax height grows with content height.
-//   </Parallax>
-// );
+const About = () => {
+  return (
+    <section>
+      <div>
+        <img src="./profile.png" alt="ProfileImage" />
+        <TypeAnimation
+          cursor={false}
+          sequence={['Frontend Developer Hyoungmin', 2000]}
+          wrapper="h1"
+          repeat={Infinity}
+        />
+        <p>UX 개선과 비즈니스 로직에 관심이 많은 개발자 이형민입니다.</p>
+        <FontAwesomeIcon icon="fa-brands fa-google" />
+        {/* <a href="mailto:hyoungqu23@gmail.com"></a> */}
+        <FontAwesomeIcon icon="fa-regular fa-clipboard" />
+        {/* <a href="https://hyoungqu23.github.io/"></a> */}
+        <FontAwesomeIcon icon="fa-brands fa-github" />
+        <FontAwesomeIcon icon="fa-brands fa-instagram" />
+      </div>
+    </section>
+  );
+};
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <About />
     </div>
   );
 }
