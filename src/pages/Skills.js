@@ -38,14 +38,10 @@ export const Skills = () => {
       <StyledCardWrapper className="flex center">
         {skilllists.map(({ title, level, description, icon }) => {
           return (
-            <StyledSkills>
-              <StyledSkillsCard>
-                <FontAwesomeIcon icon={icon} className="icon" />
-                <h3>{title}</h3>
-                <p>{level}</p>
-                <p>{description}</p>
-              </StyledSkillsCard>
-            </StyledSkills>
+            <StyledSkillsCard key={title} className="flex center">
+              <FontAwesomeIcon icon={icon} className="icon" />
+              <h3>{title}</h3>
+            </StyledSkillsCard>
           );
         })}
       </StyledCardWrapper>
@@ -53,10 +49,9 @@ export const Skills = () => {
   );
 };
 
-const StyledSkills = styled.div`
-  display: flex;
-`;
-
 const StyledSkillsCard = styled(StyledCardWrapper)`
-  background-color: green;
+  display: flex;
+  margin: 1em;
+  padding: 2em;
+  background-color: #8af;
 `;

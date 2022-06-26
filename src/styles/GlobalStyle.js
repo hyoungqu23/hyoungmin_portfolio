@@ -16,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   & section {
-    height: 100vh;
     border: 5px solid skyblue;
   }
 
