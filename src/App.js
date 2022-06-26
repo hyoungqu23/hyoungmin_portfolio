@@ -1,10 +1,11 @@
 import { NavBar, Footer } from './components';
-import { About, Introduction, Projects, Skills } from './pages';
+import { Home, About, Introduction, Projects, Skills } from './pages';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <Home />
       <About />
       <Introduction />
       <Skills />
