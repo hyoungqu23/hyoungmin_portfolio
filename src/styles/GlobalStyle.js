@@ -14,6 +14,22 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: "Noto Sans", "Arial", sans-serif;
   }
+
+  & section {
+    height: 100vh;
+    border: 5px solid skyblue;
+  }
+
+  & .flex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  & .center {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export default GlobalStyle;
