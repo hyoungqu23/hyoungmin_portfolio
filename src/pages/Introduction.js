@@ -1,11 +1,10 @@
+import styled from 'styled-components';
+
 export const Introduction = () => {
   return (
     <section>
-      <div className="introduction-img" style={{ width: '50%', height: '50%' }}>
-        <img src="img/img.svg" alt="" />
-      </div>
-      <div className="introduction-desc">
-        <ul>
+      <div className="flex center">
+        <StyledList>
           <li>
             실제로 무엇인가를 만들면서 즐거움을 느끼는 일을 업으로 하고자 찾아
             헤맸습니다. 다양한 시행착오를 거쳐 결국 웹 개발을 시작했습니다. 팀
@@ -25,8 +24,21 @@ export const Introduction = () => {
             다양한 Tool를 활용하는 것을 즐겨 새로운 Tool 사용법을 빠르게
             익힙니다.
           </li>
-        </ul>
+          <li>
+            단순히 기능을 구현하는 것이 아니라 하나의 비즈니스 로직을 구현하려고
+            노력하고 있습니다.
+          </li>
+        </StyledList>
       </div>
     </section>
   );
 };
+
+const StyledList = styled.ul`
+  width: 60%;
+  font-size: 1.25em;
+
+  & li {
+    margin-bottom: 1em;
+  }
+`;
