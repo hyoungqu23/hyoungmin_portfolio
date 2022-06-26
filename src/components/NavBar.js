@@ -30,7 +30,11 @@ export const NavBar = () => {
 };
 
 const StyledNavBar = styled.nav`
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #8af;
+  opacity: 0.75;
 
   font-size: 1.25em;
   font-weight: bold;

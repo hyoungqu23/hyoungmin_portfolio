@@ -15,9 +15,14 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Noto Sans", "Arial", sans-serif;
   }
 
-  & section {
-    border: 5px solid skyblue;
+  & section#projects {
+    height: 100%;
   }
+
+  & section {
+    height: calc(100vh - 59px);
+  }
+
 
   & .flex {
     display: flex;

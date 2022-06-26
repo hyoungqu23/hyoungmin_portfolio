@@ -35,24 +35,10 @@ export const Projects = () => {
       ],
       posts: ['블로그 연동', '블로그 연동'],
     },
-    {
-      title: 'Portfolio',
-      date: '플젝 기간2',
-      summary: '짧은 설명2',
-      stacks: ['React.js', 'styled-component'],
-      link: 'URL2',
-      description: [
-        'React.js를 활용해 포트폴리오 사이트를 구현했습니다.',
-        'Components에 대해 이해했습니다.',
-        'React.js 개발 디렉토리 구조, 경로 문제, Components 등을 이해하고 구현할 수 있습니다.',
-        'CSS-in-JS를 이해하고 Styled-Component를 활용해 스타일링할 수 있습니다.',
-      ],
-      posts: ['블로그 연동', '블로그 연동'],
-    },
   ];
 
   return (
-    <section>
+    <section id="projects">
       <div>
         {projects.map(
           ({ title, date, stacks, summary, link, description, posts }) => {
