@@ -32,23 +32,24 @@ const NavBar = () => {
 };
 
 const About = () => {
+  const advs = [
+    '긍정적인 영향력을 확장시키는 서비스를 만드는',
+    '사용자의 편의성을 향상시키는 UI를 만들어 UX를 개선하는',
+    '문제에 직면했을 때 회피하지 않는',
+  ];
+
   return (
     <section>
       <div>
-        <img src="./profile.png" alt="ProfileImage" />
+        {advs.map((adv) => {
+          return <h3>{adv}</h3>;
+        })}
         <TypeAnimation
           cursor={false}
-          sequence={['Frontend Developer Hyoungmin', 2000]}
+          sequence={['프론트엔드 개발자 이형민입니다.', 3000]}
           wrapper="h1"
           repeat={Infinity}
         />
-        <p>UX 개선과 비즈니스 로직에 관심이 많은 개발자 이형민입니다.</p>
-        <FontAwesomeIcon icon="fa-brands fa-google" />
-        {/* <a href="mailto:hyoungqu23@gmail.com"></a> */}
-        <FontAwesomeIcon icon="fa-regular fa-clipboard" />
-        {/* <a href="https://hyoungqu23.github.io/"></a> */}
-        <FontAwesomeIcon icon="fa-brands fa-github" />
-        <FontAwesomeIcon icon="fa-brands fa-instagram" />
       </div>
     </section>
   );
