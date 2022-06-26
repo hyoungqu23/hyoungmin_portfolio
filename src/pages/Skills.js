@@ -49,7 +49,7 @@ export const Skills = () => {
   );
 };
 
-const StyledSkillsCard = styled(StyledCardWrapper)`
+export const StyledSkillsCard = styled(StyledCardWrapper)`
   display: flex;
   margin: 1em;
   padding: 2em;
