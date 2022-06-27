@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/hyoungmin_portfolio/static/js/main.f834b8f7.js",
+    "static/js/787.aeca62f9.chunk.js": "/hyoungmin_portfolio/static/js/787.aeca62f9.chunk.js",
+    "static/media/profile.png": "/hyoungmin_portfolio/static/media/profile.714a0e46d19c272ebcf7.png",
+    "index.html": "/hyoungmin_portfolio/index.html",
+    "main.f834b8f7.js.map": "/hyoungmin_portfolio/static/js/main.f834b8f7.js.map",
+    "787.aeca62f9.chunk.js.map": "/hyoungmin_portfolio/static/js/787.aeca62f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f834b8f7.js"
+  ]
+}
