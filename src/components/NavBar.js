@@ -4,9 +4,6 @@ export const NavBar = () => {
   return (
     <StyledNavBar>
       <div className="nav-wrapper">
-        <a href="/" className="brand-logo">
-          😎 Hyoungmin
-        </a>
         <ul id="nav-list">
           <li>
             <a href="#home">Home</a>
@@ -24,6 +21,7 @@ export const NavBar = () => {
             <a href="#education">Education</a>
           </li>
         </ul>
+        <div className="nav-date">2022-06-27 07:30AM</div>
       </div>
     </StyledNavBar>
   );
@@ -33,23 +31,29 @@ const StyledNavBar = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #8af;
+  height: 24px;
   opacity: 0.75;
-
-  font-size: 1.25em;
-  font-weight: bold;
 
   & .nav-wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 1rem 1.5rem;
+    padding: 0 1em;
   }
 
-  & ul {
-    width: 50%;
+  & #nav-list {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    list-style: none;
+    padding: 0px;
+    gap: 1em;
+
+    height: 24px;
+  }
+
+  & .nav-date {
+    display: flex;
+    align-items: center;
+    height: 24px;
   }
 `;
