@@ -1,6 +1,5 @@
 import { NavBar, Footer } from './components';
 import { Home, About, Introduction, Projects, Skills } from './pages';
-import Container from './styles/Container';
 import GlobalStyle from './styles/GlobalStyle';
 
 function App() {
@@ -8,13 +7,10 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <NavBar />
-      <Container>
-        <Home />
-        <About />
-        <Introduction />
-        <Skills />
-        <Projects />
-      </Container>
+      <Home />
+      <Introduction />
+      <Skills />
+      <Projects />
       <Footer />
     </div>
   );

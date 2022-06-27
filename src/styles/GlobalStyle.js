@@ -15,15 +15,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Noto Sans", "Arial", sans-serif;
   }
 
-  & section#projects {
-    height: 100%;
-  }
-
-  & section {
-    height: calc(100vh - 59px);
-  }
-
-
   & .flex {
     display: flex;
     width: 100%;
@@ -33,6 +24,10 @@ const GlobalStyle = createGlobalStyle`
   & .center {
     justify-content: center;
     align-items: center;
+  }
+
+  &::selection {
+    background-color: #8af;
   }
 `;
 

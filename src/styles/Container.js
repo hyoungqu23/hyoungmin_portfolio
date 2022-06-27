@@ -21,11 +21,8 @@ export default Container;
 
 const StyledContainer = styled.div`
   width: 95%;
-  height: 500vh;
 
   margin: 3em auto;
-
-  border: 10px solid #919;
 
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15))
     drop-shadow(0px 25px 30px rgba(0, 0, 0, 0.35));

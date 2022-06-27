@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import myProfile from '../assets/img/profile.png';
 import StyledCardWrapper from '../styles/CardWrapper';
+import Container from '../styles/Container';
 
 export const Home = () => {
   return (
-    <section id="home">
+    <Container id="home">
       <div className="flex center">
         <StyledCardWrapper className="flex center">
           <StyledImgWrapper>
@@ -14,7 +15,7 @@ export const Home = () => {
           <h1>안녕하세요. 프론트엔드 개발자 이형민입니다.</h1>
         </StyledCardWrapper>
       </div>
-    </section>
+    </Container>
   );
 };
 

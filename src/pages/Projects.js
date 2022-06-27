@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { StyledSkillsCard } from './Skills';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+import Container from '../styles/Container';
 
 export const Projects = () => {
   const projects = [
@@ -38,12 +38,12 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects">
+    <Container id="projects">
       <div>
         {projects.map(
           ({ title, date, stacks, summary, link, description, posts }) => {
             return (
-              <StyledWrapper className="center">
+              <div className="center">
                 <h1>{title}</h1>
                 <div className="date">{date}</div>
                 <div className="link">
@@ -53,7 +53,7 @@ export const Projects = () => {
                 <div className="summary">{summary}</div>
                 <div className="flex center skills">
                   {stacks.map((item) => (
-                    <StyledProjectSkillsCard>{item}</StyledProjectSkillsCard>
+                    <div>{item}</div>
                   ))}
                 </div>
                 <div className="flex center descriptions">
@@ -66,57 +66,11 @@ export const Projects = () => {
                     <div>{item}</div>
                   ))}
                 </div>
-              </StyledWrapper>
+              </div>
             );
           },
         )}
       </div>
-    </section>
+    </Container>
   );
 };
-
-const StyledWrapper = styled.div`
-  display: grid;
-  height: 70vh;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5em;
-
-  border: 10px solid black;
-
-  & h1 {
-    grid-column: 1 / 4;
-  }
-
-  & .date {
-    color: #555555;
-    font-size: 0.75em;
-  }
-
-  & .summary {
-    grid-column: 2 / 5;
-  }
-
-  & .flex {
-    grid-column: 1 / 5;
-    flex-direction: column;
-  }
-
-  & .flex.skills {
-    flex-direction: row;
-  }
-`;
-
-const StyledProjectSkillsCard = styled(StyledSkillsCard)`
-  width: 50%;
-  padding: 1em;
-  height: 3em;
-  font-size: 0.75em;
-  text-align: center;
-  box-shadow: 0 0 5;
-  transition: all ease 1s 0.3s;
-
-  &:hover {
-    transform: scale(1.1);
-    font-weight: bold;
-  }
-`;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import StyledCardWrapper from '../styles/CardWrapper';
+
+import Container from '../styles/Container';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
@@ -34,24 +35,17 @@ export const Skills = () => {
   ];
 
   return (
-    <section>
-      <StyledCardWrapper className="flex center">
+    <Container>
+      <div className="flex center">
         {skilllists.map(({ title, level, description, icon }) => {
           return (
-            <StyledSkillsCard key={title} className="flex center">
+            <div key={title} className="flex center">
               <FontAwesomeIcon icon={icon} className="icon" />
               <h3>{title}</h3>
-            </StyledSkillsCard>
+            </div>
           );
         })}
-      </StyledCardWrapper>
-    </section>
+      </div>
+    </Container>
   );
 };
-
-export const StyledSkillsCard = styled(StyledCardWrapper)`
-  display: flex;
-  margin: 1em;
-  padding: 2em;
-  background-color: #8af;
-`;
