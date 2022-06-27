@@ -23,6 +23,7 @@ const StyledContainer = styled.div`
   width: 95%;
 
   margin: 3em auto;
+  padding-top: 2em;
 
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15))
     drop-shadow(0px 25px 30px rgba(0, 0, 0, 0.35));
